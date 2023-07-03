@@ -11,6 +11,7 @@ Public Class Form_Login
     Private Sub Link_Register_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles Link_Register.LinkClicked
         Dim f As New Form_Register
         f.Show()
+        Me.Hide()
     End Sub
 
     Private Function IsValidEmail(email As String) As Boolean
@@ -37,7 +38,8 @@ Public Class Form_Login
         Dim password As String = Text_Password.Text
 
         ' Koneksi ke database (ganti connection string dengan yang sesuai)
-        Dim connectionString As String = "Data Source=LAPTOP-R7CIKDER\ARIFACER;Initial Catalog=mini_project;User ID=sa;Password=123456; Integrated Security=True;"
+
+        Dim connectionString As String = "Data Source=DESKTOP-NDRD6D4;Initial Catalog=Mini_Project;User ID=sa;Password=123456; Integrated Security=True;"
         Dim connection As New SqlConnection(connectionString)
 
         Try
@@ -65,10 +67,10 @@ Public Class Form_Login
                         Dim formKaryawan As New Form_Karyawan()
                         formKaryawan.Show()
                         Me.Hide()
-                    Case "user"
-                        ' Jika peran adalah "user", buka Form_User
-                        Dim formUser As New Form_User()
-                        formUser.Show()
+                    Case "wisatawan"
+                        ' Jika peran adalah "wisatawan", buka Form_Wisatawan
+                        Dim formWisatawan As New Form_Wisatawan()
+                        formWisatawan.Show()
                         Me.Hide()
                     Case Else
                         ' Jika peran tidak dikenali, tampilkan pesan kesalahan

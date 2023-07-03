@@ -75,7 +75,7 @@ Partial Class Form_Tambah_Iklan
         Label2.AutoSize = True
         Label2.Font = New Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point)
         Label2.ForeColor = Color.White
-        Label2.Location = New Point(82, 75)
+        Label2.Location = New Point(199, 73)
         Label2.Name = "Label2"
         Label2.Size = New Size(77, 32)
         Label2.TabIndex = 7
@@ -86,7 +86,7 @@ Partial Class Form_Tambah_Iklan
         Label3.AutoSize = True
         Label3.Font = New Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point)
         Label3.ForeColor = Color.White
-        Label3.Location = New Point(82, 181)
+        Label3.Location = New Point(199, 179)
         Label3.Name = "Label3"
         Label3.Size = New Size(52, 32)
         Label3.TabIndex = 8
@@ -97,7 +97,7 @@ Partial Class Form_Tambah_Iklan
         Label4.AutoSize = True
         Label4.Font = New Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point)
         Label4.ForeColor = Color.White
-        Label4.Location = New Point(82, 295)
+        Label4.Location = New Point(199, 293)
         Label4.Name = "Label4"
         Label4.Size = New Size(60, 32)
         Label4.TabIndex = 9
@@ -108,15 +108,15 @@ Partial Class Form_Tambah_Iklan
         Label5.AutoSize = True
         Label5.Font = New Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point)
         Label5.ForeColor = Color.White
-        Label5.Location = New Point(82, 412)
+        Label5.Location = New Point(199, 410)
         Label5.Name = "Label5"
-        Label5.Size = New Size(123, 31)
+        Label5.Size = New Size(68, 31)
         Label5.TabIndex = 10
-        Label5.Text = "Total Biaya"
+        Label5.Text = "Biaya"
         ' 
         ' TextBox1
         ' 
-        TextBox1.Location = New Point(82, 121)
+        TextBox1.Location = New Point(199, 119)
         TextBox1.Multiline = True
         TextBox1.Name = "TextBox1"
         TextBox1.Size = New Size(427, 57)
@@ -124,7 +124,7 @@ Partial Class Form_Tambah_Iklan
         ' 
         ' TextBox2
         ' 
-        TextBox2.Location = New Point(82, 227)
+        TextBox2.Location = New Point(199, 225)
         TextBox2.Multiline = True
         TextBox2.Name = "TextBox2"
         TextBox2.Size = New Size(427, 65)
@@ -132,7 +132,7 @@ Partial Class Form_Tambah_Iklan
         ' 
         ' TextBox3
         ' 
-        TextBox3.Location = New Point(82, 340)
+        TextBox3.Location = New Point(199, 338)
         TextBox3.Multiline = True
         TextBox3.Name = "TextBox3"
         TextBox3.Size = New Size(427, 59)
@@ -140,7 +140,7 @@ Partial Class Form_Tambah_Iklan
         ' 
         ' TextBox4
         ' 
-        TextBox4.Location = New Point(82, 455)
+        TextBox4.Location = New Point(199, 453)
         TextBox4.Multiline = True
         TextBox4.Name = "TextBox4"
         TextBox4.Size = New Size(427, 67)

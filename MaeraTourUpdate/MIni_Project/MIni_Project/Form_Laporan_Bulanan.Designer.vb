@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class Form_Karyawan
+Partial Class Form_Laporan_Bulanan
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -22,15 +22,9 @@ Partial Class Form_Karyawan
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        SuspendLayout()
-        ' 
-        ' Form_Karyawan
-        ' 
-        AutoScaleDimensions = New SizeF(8F, 20F)
-        AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(800, 450)
-        Name = "Form_Karyawan"
-        Text = "Form_Karyawan"
-        ResumeLayout(False)
+        components = New System.ComponentModel.Container
+        Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Text = "Form_Laporan_Bulanan"
     End Sub
 End Class

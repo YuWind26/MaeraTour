@@ -4,9 +4,8 @@ Imports System.Data.SqlClient
 Imports System.Text.RegularExpressions
 
 Public Class Form_Register
-    Dim conn As SqlConnection = New SqlConnection("Data Source=LAPTOP-R7CIKDER\ARIFACER; " &
-                "user id = sa; password=123456; Integrated Security=True; " &
-                "database=Mini_Project")
+    Dim connectionString As String = "Data Source=DESKTOP-NDRD6D4;Initial Catalog=Mini_Project;User ID=sa;Password=123456; Integrated Security=True;"
+    Dim conn As New SqlConnection(connectionString)
     Dim ADP As SqlDataAdapter
     Dim DS As New DataSet
 

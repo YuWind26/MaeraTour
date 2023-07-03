@@ -55,7 +55,7 @@ Partial Class Form_Login
         ' 
         ' Btn_Hide
         ' 
-        Btn_Hide.Location = New Point(268, 239)
+        Btn_Hide.Location = New Point(239, -49)
         Btn_Hide.Name = "Btn_Hide"
         Btn_Hide.Size = New Size(62, 43)
         Btn_Hide.TabIndex = 8

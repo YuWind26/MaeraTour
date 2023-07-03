@@ -29,7 +29,6 @@ Partial Class Form_Admin
         Btn_Logout = New Button()
         Label1 = New Label()
         Btn_Iklan = New Button()
-        Btn_Tiket = New Button()
         SuspendLayout()
         ' 
         ' Btn_User
@@ -120,26 +119,12 @@ Partial Class Form_Admin
         Btn_Iklan.FlatStyle = FlatStyle.Flat
         Btn_Iklan.Font = New Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point)
         Btn_Iklan.ForeColor = Color.White
-        Btn_Iklan.Location = New Point(170, 373)
+        Btn_Iklan.Location = New Point(301, 371)
         Btn_Iklan.Name = "Btn_Iklan"
         Btn_Iklan.Size = New Size(170, 80)
         Btn_Iklan.TabIndex = 6
         Btn_Iklan.Text = "Iklan dan Operasional"
         Btn_Iklan.UseVisualStyleBackColor = False
-        ' 
-        ' Btn_Tiket
-        ' 
-        Btn_Tiket.BackColor = Color.FromArgb(CByte(68), CByte(71), CByte(101))
-        Btn_Tiket.FlatAppearance.BorderSize = 0
-        Btn_Tiket.FlatStyle = FlatStyle.Flat
-        Btn_Tiket.Font = New Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point)
-        Btn_Tiket.ForeColor = Color.White
-        Btn_Tiket.Location = New Point(440, 373)
-        Btn_Tiket.Name = "Btn_Tiket"
-        Btn_Tiket.Size = New Size(170, 80)
-        Btn_Tiket.TabIndex = 7
-        Btn_Tiket.Text = "Tiket"
-        Btn_Tiket.UseVisualStyleBackColor = False
         ' 
         ' Form_Admin
         ' 
@@ -147,7 +132,6 @@ Partial Class Form_Admin
         AutoScaleMode = AutoScaleMode.Font
         BackColor = Color.FromArgb(CByte(32), CByte(40), CByte(70))
         ClientSize = New Size(800, 499)
-        Controls.Add(Btn_Tiket)
         Controls.Add(Btn_Iklan)
         Controls.Add(Label1)
         Controls.Add(Btn_Logout)
@@ -168,5 +152,4 @@ Partial Class Form_Admin
     Friend WithEvents Btn_Logout As Button
     Friend WithEvents Label1 As Label
     Friend WithEvents Btn_Iklan As Button
-    Friend WithEvents Btn_Tiket As Button
 End Class

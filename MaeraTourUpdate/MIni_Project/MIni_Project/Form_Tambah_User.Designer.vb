@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class Form_Tambah_Karyawan
+Partial Class Form_Tambah_User
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -29,11 +29,11 @@ Partial Class Form_Tambah_Karyawan
         Label3 = New Label()
         Label4 = New Label()
         Label5 = New Label()
-        Text_Karyawan = New TextBox()
         Text_Username = New TextBox()
         Text_Email = New TextBox()
         Text_Password = New TextBox()
         Btn_Hide_Regis = New Button()
+        cbRole = New ComboBox()
         SuspendLayout()
         ' 
         ' btnBack
@@ -65,7 +65,7 @@ Partial Class Form_Tambah_Karyawan
         Label1.AutoSize = True
         Label1.Font = New Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point)
         Label1.ForeColor = Color.White
-        Label1.Location = New Point(121, 118)
+        Label1.Location = New Point(103, 95)
         Label1.Name = "Label1"
         Label1.Size = New Size(58, 31)
         Label1.TabIndex = 3
@@ -76,7 +76,7 @@ Partial Class Form_Tambah_Karyawan
         Label2.AutoSize = True
         Label2.Font = New Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point)
         Label2.ForeColor = Color.White
-        Label2.Location = New Point(121, 176)
+        Label2.Location = New Point(103, 159)
         Label2.Name = "Label2"
         Label2.Size = New Size(117, 31)
         Label2.TabIndex = 4
@@ -87,7 +87,7 @@ Partial Class Form_Tambah_Karyawan
         Label3.AutoSize = True
         Label3.Font = New Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point)
         Label3.ForeColor = Color.White
-        Label3.Location = New Point(121, 258)
+        Label3.Location = New Point(103, 258)
         Label3.Name = "Label3"
         Label3.Size = New Size(70, 31)
         Label3.TabIndex = 5
@@ -98,7 +98,7 @@ Partial Class Form_Tambah_Karyawan
         Label4.AutoSize = True
         Label4.Font = New Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point)
         Label4.ForeColor = Color.White
-        Label4.Location = New Point(121, 346)
+        Label4.Location = New Point(103, 365)
         Label4.Name = "Label4"
         Label4.Size = New Size(100, 31)
         Label4.TabIndex = 6
@@ -115,20 +115,9 @@ Partial Class Form_Tambah_Karyawan
         Label5.TabIndex = 7
         Label5.Text = "Tambah User"
         ' 
-        ' Text_Karyawan
-        ' 
-        Text_Karyawan.Font = New Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point)
-        Text_Karyawan.Location = New Point(218, 124)
-        Text_Karyawan.Multiline = True
-        Text_Karyawan.Name = "Text_Karyawan"
-        Text_Karyawan.ReadOnly = True
-        Text_Karyawan.Size = New Size(173, 49)
-        Text_Karyawan.TabIndex = 8
-        Text_Karyawan.Text = "Karyawan"
-        ' 
         ' Text_Username
         ' 
-        Text_Username.Location = New Point(137, 210)
+        Text_Username.Location = New Point(103, 193)
         Text_Username.Multiline = True
         Text_Username.Name = "Text_Username"
         Text_Username.Size = New Size(612, 45)
@@ -136,7 +125,7 @@ Partial Class Form_Tambah_Karyawan
         ' 
         ' Text_Email
         ' 
-        Text_Email.Location = New Point(137, 292)
+        Text_Email.Location = New Point(103, 292)
         Text_Email.Multiline = True
         Text_Email.Name = "Text_Email"
         Text_Email.Size = New Size(612, 51)
@@ -144,7 +133,7 @@ Partial Class Form_Tambah_Karyawan
         ' 
         ' Text_Password
         ' 
-        Text_Password.Location = New Point(137, 399)
+        Text_Password.Location = New Point(103, 399)
         Text_Password.Multiline = True
         Text_Password.Name = "Text_Password"
         Text_Password.Size = New Size(355, 52)
@@ -152,24 +141,33 @@ Partial Class Form_Tambah_Karyawan
         ' 
         ' Btn_Hide_Regis
         ' 
-        Btn_Hide_Regis.Location = New Point(533, 399)
+        Btn_Hide_Regis.BackColor = Color.White
+        Btn_Hide_Regis.Location = New Point(478, 399)
         Btn_Hide_Regis.Name = "Btn_Hide_Regis"
         Btn_Hide_Regis.Size = New Size(89, 52)
         Btn_Hide_Regis.TabIndex = 12
         Btn_Hide_Regis.Text = "Hide"
-        Btn_Hide_Regis.UseVisualStyleBackColor = True
+        Btn_Hide_Regis.UseVisualStyleBackColor = False
         ' 
-        ' Form_Tambah_Karyawan
+        ' cbRole
+        ' 
+        cbRole.FormattingEnabled = True
+        cbRole.Location = New Point(167, 98)
+        cbRole.Name = "cbRole"
+        cbRole.Size = New Size(151, 28)
+        cbRole.TabIndex = 13
+        ' 
+        ' Form_Tambah_User
         ' 
         AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
         BackColor = Color.FromArgb(CByte(32), CByte(40), CByte(70))
         ClientSize = New Size(800, 478)
+        Controls.Add(cbRole)
         Controls.Add(Btn_Hide_Regis)
         Controls.Add(Text_Password)
         Controls.Add(Text_Email)
         Controls.Add(Text_Username)
-        Controls.Add(Text_Karyawan)
         Controls.Add(Label5)
         Controls.Add(Label4)
         Controls.Add(Label3)
@@ -177,7 +175,7 @@ Partial Class Form_Tambah_Karyawan
         Controls.Add(Label1)
         Controls.Add(BtnAddUser)
         Controls.Add(btnBack)
-        Name = "Form_Tambah_Karyawan"
+        Name = "Form_Tambah_User"
         Text = "Form_Tambah_Karyawan"
         ResumeLayout(False)
         PerformLayout()
@@ -190,9 +188,9 @@ Partial Class Form_Tambah_Karyawan
     Friend WithEvents Label3 As Label
     Friend WithEvents Label4 As Label
     Friend WithEvents Label5 As Label
-    Friend WithEvents Text_Karyawan As TextBox
     Friend WithEvents Text_Username As TextBox
     Friend WithEvents Text_Email As TextBox
     Friend WithEvents Text_Password As TextBox
     Friend WithEvents Btn_Hide_Regis As Button
+    Friend WithEvents cbRole As ComboBox
 End Class

@@ -26,12 +26,27 @@ Public Class Form_Admin
     End Sub
 
     Private Sub Btn_Tempat_Wisata_Click(sender As Object, e As EventArgs) Handles Btn_Tempat_Wisata.Click
-
+        ' Kembali ke screen login
+        Dim kelolaWahanaForm As New Form_Kelola_Wahana()
+        kelolaWahanaForm.Show()
+        Me.Hide()
     End Sub
 
     Private Sub Btn_Iklan_Click(sender As Object, e As EventArgs) Handles Btn_Iklan.Click
         Dim loginIklan As New Form_Kelola_Iklan
         loginIklan.Show()
+        Me.Hide()
+    End Sub
+
+    Private Sub Btn_Gaji_Click(sender As Object, e As EventArgs) Handles Btn_Gaji.Click
+        Dim gajiForm As New Form_Transaksi_Gaji
+        gajiForm.Show()
+        Me.Hide()
+    End Sub
+
+    Private Sub Btn_Laporan_Click(sender As Object, e As EventArgs) Handles Btn_Laporan.Click
+        Dim laporanBulananForm As New Form_Laporan_Bulanan
+        laporanBulananForm.Show()
         Me.Hide()
     End Sub
 End Class

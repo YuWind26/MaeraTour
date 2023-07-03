@@ -25,6 +25,7 @@ Partial Class Form_Kelola_Iklan
         Btn_Iklan = New Button()
         btnBack = New Button()
         DataGridView1 = New DataGridView()
+        Label1 = New Label()
         CType(DataGridView1, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
         ' 
@@ -62,12 +63,25 @@ Partial Class Form_Kelola_Iklan
         DataGridView1.Size = New Size(723, 331)
         DataGridView1.TabIndex = 4
         ' 
+        ' Label1
+        ' 
+        Label1.AutoSize = True
+        Label1.Font = New Font("Microsoft Sans Serif", 20.25F, FontStyle.Bold, GraphicsUnit.Point)
+        Label1.ForeColor = SystemColors.Control
+        Label1.Location = New Point(224, 18)
+        Label1.Margin = New Padding(4, 0, 4, 0)
+        Label1.Name = "Label1"
+        Label1.Size = New Size(376, 39)
+        Label1.TabIndex = 30
+        Label1.Text = "Iklan Dan Operasional"
+        ' 
         ' Form_Kelola_Iklan
         ' 
         AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
         BackColor = Color.FromArgb(CByte(32), CByte(40), CByte(70))
         ClientSize = New Size(800, 450)
+        Controls.Add(Label1)
         Controls.Add(DataGridView1)
         Controls.Add(btnBack)
         Controls.Add(Btn_Iklan)
@@ -75,9 +89,11 @@ Partial Class Form_Kelola_Iklan
         Text = "Form_Kelola_Iklan"
         CType(DataGridView1, ComponentModel.ISupportInitialize).EndInit()
         ResumeLayout(False)
+        PerformLayout()
     End Sub
 
     Friend WithEvents Btn_Iklan As Button
     Friend WithEvents btnBack As Button
     Friend WithEvents DataGridView1 As DataGridView
+    Friend WithEvents Label1 As Label
 End Class
