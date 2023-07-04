@@ -22,22 +22,18 @@ Partial Class Form_Order_Tiket
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim resources As ComponentModel.ComponentResourceManager = New ComponentModel.ComponentResourceManager(GetType(Form_Order_Tiket))
         Button1 = New Button()
         Label1 = New Label()
         Panel1 = New Panel()
         Button5 = New Button()
-        Label6 = New Label()
         TextBox3 = New TextBox()
         Label5 = New Label()
         TextBox1 = New TextBox()
         Label4 = New Label()
-        Label2 = New Label()
-        PictureBox2 = New PictureBox()
+        Labelharga = New Label()
         TextBox2 = New TextBox()
         Label3 = New Label()
         Panel1.SuspendLayout()
-        CType(PictureBox2, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
         ' 
         ' Button1
@@ -68,13 +64,11 @@ Partial Class Form_Order_Tiket
         ' 
         Panel1.BackColor = SystemColors.ControlDark
         Panel1.Controls.Add(Button5)
-        Panel1.Controls.Add(Label6)
         Panel1.Controls.Add(TextBox3)
         Panel1.Controls.Add(Label5)
         Panel1.Controls.Add(TextBox1)
         Panel1.Controls.Add(Label4)
-        Panel1.Controls.Add(Label2)
-        Panel1.Controls.Add(PictureBox2)
+        Panel1.Controls.Add(Labelharga)
         Panel1.Controls.Add(TextBox2)
         Panel1.Controls.Add(Label3)
         Panel1.Location = New Point(36, 174)
@@ -94,18 +88,6 @@ Partial Class Form_Order_Tiket
         Button5.TabIndex = 27
         Button5.Text = "Pesan"
         Button5.UseVisualStyleBackColor = False
-        ' 
-        ' Label6
-        ' 
-        Label6.AutoSize = True
-        Label6.Font = New Font("Microsoft Sans Serif", 12F, FontStyle.Italic, GraphicsUnit.Point)
-        Label6.ForeColor = SystemColors.Control
-        Label6.Location = New Point(287, 309)
-        Label6.Margin = New Padding(4, 0, 4, 0)
-        Label6.Name = "Label6"
-        Label6.Size = New Size(123, 25)
-        Label6.TabIndex = 22
-        Label6.Text = "Total Bayar :"
         ' 
         ' TextBox3
         ' 
@@ -147,35 +129,24 @@ Partial Class Form_Order_Tiket
         Label4.TabIndex = 18
         Label4.Text = "Jumlah Pesan"
         ' 
-        ' Label2
+        ' Labelharga
         ' 
-        Label2.AutoSize = True
-        Label2.Font = New Font("Microsoft Sans Serif", 12F, FontStyle.Italic, GraphicsUnit.Point)
-        Label2.ForeColor = SystemColors.Control
-        Label2.Location = New Point(380, 91)
-        Label2.Margin = New Padding(4, 0, 4, 0)
-        Label2.Name = "Label2"
-        Label2.Size = New Size(76, 25)
-        Label2.TabIndex = 17
-        Label2.Text = "Harga :"
-        ' 
-        ' PictureBox2
-        ' 
-        PictureBox2.Image = CType(resources.GetObject("PictureBox2.Image"), Image)
-        PictureBox2.Location = New Point(21, 45)
-        PictureBox2.Margin = New Padding(4, 5, 4, 5)
-        PictureBox2.Name = "PictureBox2"
-        PictureBox2.Size = New Size(133, 77)
-        PictureBox2.SizeMode = PictureBoxSizeMode.StretchImage
-        PictureBox2.TabIndex = 16
-        PictureBox2.TabStop = False
+        Labelharga.AutoSize = True
+        Labelharga.Font = New Font("Microsoft Sans Serif", 12F, FontStyle.Italic, GraphicsUnit.Point)
+        Labelharga.ForeColor = SystemColors.Control
+        Labelharga.Location = New Point(394, 88)
+        Labelharga.Margin = New Padding(4, 0, 4, 0)
+        Labelharga.Name = "Labelharga"
+        Labelharga.Size = New Size(65, 25)
+        Labelharga.TabIndex = 17
+        Labelharga.Text = "Harga"
         ' 
         ' TextBox2
         ' 
-        TextBox2.Location = New Point(220, 95)
+        TextBox2.Location = New Point(34, 89)
         TextBox2.Margin = New Padding(4, 5, 4, 5)
         TextBox2.Name = "TextBox2"
-        TextBox2.Size = New Size(132, 27)
+        TextBox2.Size = New Size(306, 27)
         TextBox2.TabIndex = 15
         ' 
         ' Label3
@@ -183,7 +154,7 @@ Partial Class Form_Order_Tiket
         Label3.AutoSize = True
         Label3.Font = New Font("Microsoft Sans Serif", 12F, FontStyle.Italic, GraphicsUnit.Point)
         Label3.ForeColor = SystemColors.Control
-        Label3.Location = New Point(215, 45)
+        Label3.Location = New Point(29, 33)
         Label3.Margin = New Padding(4, 0, 4, 0)
         Label3.Name = "Label3"
         Label3.Size = New Size(119, 25)
@@ -204,7 +175,6 @@ Partial Class Form_Order_Tiket
         Text = "Form6"
         Panel1.ResumeLayout(False)
         Panel1.PerformLayout()
-        CType(PictureBox2, ComponentModel.ISupportInitialize).EndInit()
         ResumeLayout(False)
         PerformLayout()
     End Sub
@@ -212,14 +182,12 @@ Partial Class Form_Order_Tiket
     Friend WithEvents Button1 As Button
     Friend WithEvents Label1 As Label
     Friend WithEvents Panel1 As Panel
-    Friend WithEvents PictureBox2 As PictureBox
     Friend WithEvents TextBox2 As TextBox
     Friend WithEvents Label3 As Label
-    Friend WithEvents Label6 As Label
     Friend WithEvents TextBox3 As TextBox
     Friend WithEvents Label5 As Label
     Friend WithEvents TextBox1 As TextBox
     Friend WithEvents Label4 As Label
-    Friend WithEvents Label2 As Label
+    Friend WithEvents Labelharga As Label
     Friend WithEvents Button5 As Button
 End Class

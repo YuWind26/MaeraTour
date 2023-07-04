@@ -26,7 +26,6 @@ Partial Class Form_Karyawan
         Btn_Logout = New Button()
         Btn_Iklan = New Button()
         Btn_Laporan = New Button()
-        Btn_Tiket = New Button()
         Btn_Tempat_Wisata = New Button()
         SuspendLayout()
         ' 
@@ -62,7 +61,7 @@ Partial Class Form_Karyawan
         Btn_Iklan.FlatStyle = FlatStyle.Flat
         Btn_Iklan.Font = New Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point)
         Btn_Iklan.ForeColor = Color.White
-        Btn_Iklan.Location = New Point(180, 235)
+        Btn_Iklan.Location = New Point(316, 247)
         Btn_Iklan.Name = "Btn_Iklan"
         Btn_Iklan.Size = New Size(170, 80)
         Btn_Iklan.TabIndex = 12
@@ -82,20 +81,6 @@ Partial Class Form_Karyawan
         Btn_Laporan.TabIndex = 11
         Btn_Laporan.Text = "Laporan Bulanan"
         Btn_Laporan.UseVisualStyleBackColor = False
-        ' 
-        ' Btn_Tiket
-        ' 
-        Btn_Tiket.BackColor = Color.FromArgb(CByte(68), CByte(71), CByte(101))
-        Btn_Tiket.FlatAppearance.BorderSize = 0
-        Btn_Tiket.FlatStyle = FlatStyle.Flat
-        Btn_Tiket.Font = New Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point)
-        Btn_Tiket.ForeColor = Color.White
-        Btn_Tiket.Location = New Point(455, 235)
-        Btn_Tiket.Name = "Btn_Tiket"
-        Btn_Tiket.Size = New Size(170, 80)
-        Btn_Tiket.TabIndex = 10
-        Btn_Tiket.Text = "Tiket"
-        Btn_Tiket.UseVisualStyleBackColor = False
         ' 
         ' Btn_Tempat_Wisata
         ' 
@@ -119,7 +104,6 @@ Partial Class Form_Karyawan
         ClientSize = New Size(800, 450)
         Controls.Add(Btn_Iklan)
         Controls.Add(Btn_Laporan)
-        Controls.Add(Btn_Tiket)
         Controls.Add(Btn_Tempat_Wisata)
         Controls.Add(Btn_Logout)
         Controls.Add(Label1)
@@ -133,6 +117,5 @@ Partial Class Form_Karyawan
     Friend WithEvents Btn_Logout As Button
     Friend WithEvents Btn_Iklan As Button
     Friend WithEvents Btn_Laporan As Button
-    Friend WithEvents Btn_Tiket As Button
     Friend WithEvents Btn_Tempat_Wisata As Button
 End Class

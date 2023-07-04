@@ -8,6 +8,8 @@
     <MyType>WindowsForms</MyType>
   </PropertyGroup>
 
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'" />
+
   <ItemGroup>
     <Import Include="System.Data" />
     <Import Include="System.Drawing" />

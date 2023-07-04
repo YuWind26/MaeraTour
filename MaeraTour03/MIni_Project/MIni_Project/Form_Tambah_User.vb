@@ -5,7 +5,7 @@ Imports System.Text.RegularExpressions
 Imports System.Windows.Forms.VisualStyles.VisualStyleElement
 
 Public Class Form_Tambah_User
-    Dim connectionString As String = "Data Source=LAPTOP-R7CIKDER\ARIFACER;Initial Catalog=Mini_Project;User ID=sa;Password=123456; Integrated Security=True;"
+    Dim connectionString As String = "Data Source=DESKTOP-NDRD6D4;Initial Catalog=Mini_Project;User ID=sa;Password=123456; Integrated Security=True;"
     Dim conn As New SqlConnection(connectionString)
     Dim ADP As SqlDataAdapter
     Dim DS As New DataSet
@@ -88,31 +88,4 @@ Public Class Form_Tambah_User
         Me.Hide()
     End Sub
 
-    Private Sub Label1_Click(sender As Object, e As EventArgs) Handles Label1.Click
-
-    End Sub
-
-    Private Sub Label2_Click(sender As Object, e As EventArgs) Handles Label2.Click
-    End Sub
-
-    Private Sub Label3_Click(sender As Object, e As EventArgs) Handles Label3.Click
-    End Sub
-
-    Private Sub Label4_Click(sender As Object, e As EventArgs) Handles Label4.Click
-    End Sub
-
-    Private Sub Label5_Click(sender As Object, e As EventArgs) Handles Label5.Click
-    End Sub
-
-    Private Sub Text_Username_TextChanged(sender As Object, e As EventArgs) Handles Text_Username.TextChanged
-    End Sub
-
-    Private Sub Text_Email_TextChanged(sender As Object, e As EventArgs) Handles Text_Email.TextChanged
-    End Sub
-
-    Private Sub Text_Password_TextChanged(sender As Object, e As EventArgs) Handles Text_Password.TextChanged
-    End Sub
-
-    Private Sub cbRole_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cbRole.SelectedIndexChanged
-    End Sub
 End Class

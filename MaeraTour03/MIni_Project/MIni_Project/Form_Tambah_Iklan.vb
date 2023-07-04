@@ -1,7 +1,7 @@
 ﻿Imports System.Data.SqlClient
 
 Public Class Form_Tambah_Iklan
-    Dim connectionString As String = "Data Source=LAPTOP-R7CIKDER\ARIFACER;Initial Catalog=Mini_Project;User ID=sa;Password=123456; Integrated Security=True;"
+    Dim connectionString As String = "Data Source=DESKTOP-NDRD6D4;Initial Catalog=Mini_Project;User ID=sa;Password=123456; Integrated Security=True;"
     Dim conn As New SqlConnection(connectionString)
     Dim ADP As SqlDataAdapter
     Dim DS As New DataSet

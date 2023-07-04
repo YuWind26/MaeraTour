@@ -19,4 +19,16 @@
         WisataForm.Show()
         Me.Hide()
     End Sub
+
+    Private Sub Btn_Iklan_Click(sender As Object, e As EventArgs) Handles Btn_Iklan.Click
+        Dim WisataForm As New Form_Kelola_Wahana_Karyawan()
+        WisataForm.Show()
+        Me.Hide()
+    End Sub
+
+    Private Sub Btn_Laporan_Click(sender As Object, e As EventArgs) Handles Btn_Laporan.Click
+        Dim laporanBulananKaryawanForm As New Form_Laporan_Bulanan_Karyawan()
+        laporanBulananKaryawanForm.Show()
+        Me.Hide()
+    End Sub
 End Class

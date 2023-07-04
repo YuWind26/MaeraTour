@@ -32,12 +32,14 @@ Partial Class Form_Login
         Label2 = New Label()
         Label1 = New Label()
         Text_Email = New TextBox()
+        Btn_Hide_Regis = New Button()
         GroupBox1.SuspendLayout()
         SuspendLayout()
         ' 
         ' GroupBox1
         ' 
         GroupBox1.BackColor = Color.FromArgb(CByte(242), CByte(238), CByte(238))
+        GroupBox1.Controls.Add(Btn_Hide_Regis)
         GroupBox1.Controls.Add(Btn_Hide)
         GroupBox1.Controls.Add(Button_Login)
         GroupBox1.Controls.Add(Link_Register)
@@ -142,6 +144,15 @@ Partial Class Form_Login
         Text_Email.Size = New Size(260, 43)
         Text_Email.TabIndex = 0
         ' 
+        ' Btn_Hide_Regis
+        ' 
+        Btn_Hide_Regis.Location = New Point(268, 239)
+        Btn_Hide_Regis.Name = "Btn_Hide_Regis"
+        Btn_Hide_Regis.Size = New Size(62, 43)
+        Btn_Hide_Regis.TabIndex = 12
+        Btn_Hide_Regis.Text = "Hide"
+        Btn_Hide_Regis.UseVisualStyleBackColor = True
+        ' 
         ' Form_Login
         ' 
         AutoScaleDimensions = New SizeF(8F, 20F)
@@ -166,4 +177,5 @@ Partial Class Form_Login
     Friend WithEvents Label4 As Label
     Friend WithEvents Button_Login As Button
     Friend WithEvents Btn_Hide As Button
+    Friend WithEvents Btn_Hide_Regis As Button
 End Class

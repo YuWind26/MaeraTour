@@ -27,7 +27,7 @@ Public Class Form_Update_Wahana
         Dim updatedHarga As Integer = Integer.Parse(Text_Password.Text)
 
         ' Update data ke database
-        Dim connectionString As String = "Data Source=LAPTOP-R7CIKDER\ARIFACER;Initial Catalog=Mini_Project;User ID=sa;Password=123456; Integrated Security=True;"
+        Dim connectionString As String = "Data Source=DESKTOP-NDRD6D4;Initial Catalog=Mini_Project;User ID=sa;Password=123456; Integrated Security=True;"
         Dim query As String = "UPDATE [tiket_wahana] SET [nama] = @nama, [deskripsi] = @deskripsi, [harga] = @harga WHERE [nama] = @selectedNama"
 
         Try
@@ -53,8 +53,8 @@ Public Class Form_Update_Wahana
 
     Private Sub btnBack_Click(sender As Object, e As EventArgs) Handles btnBack.Click
         ' Kembali ke screen login
-        Dim WahanaForm As New Form_Kelola_Wahana()
-        WahanaForm.Show()
+        Dim invoiceTiketForm As New Form_Invoice_Tiket()
+        invoiceTiketForm.Show()
         Me.Hide()
     End Sub
 End Class

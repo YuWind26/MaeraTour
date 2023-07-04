@@ -1,7 +1,7 @@
 ﻿Imports System.Data.SqlClient
 
-Public Class Form_Laporan_Bulanan
-    Private Sub Form_Laporan_Bulanan_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+Public Class Form_Laporan_Bulanan_Karyawan
+    Private Sub Form_Laporan_Bulanan_Karyawan_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         ' Koneksi ke database (ganti connection string dengan yang sesuai)
         Dim connectionString As String = "Data Source=DESKTOP-NDRD6D4;Initial Catalog=Mini_Project;User ID=sa;Password=123456; Integrated Security=True;"
         Dim connection As New SqlConnection(connectionString)
@@ -51,9 +51,8 @@ Public Class Form_Laporan_Bulanan
 
     Private Sub BtnBack_Click(sender As Object, e As EventArgs) Handles BtnBack.Click
         ' Kembali ke screen login
-        Dim adminForm As New Form_Admin()
-        adminForm.Show()
+        Dim karyawanForm As New Form_Karyawan()
+        karyawanForm.Show()
         Me.Hide()
     End Sub
-
 End Class

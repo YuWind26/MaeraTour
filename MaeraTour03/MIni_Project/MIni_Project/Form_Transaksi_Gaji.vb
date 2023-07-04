@@ -11,7 +11,7 @@ Public Class Form_Transaksi_Gaji
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         ' Koneksi ke database (ganti connection string dengan yang sesuai)
-        Dim connectionString As String = "Data Source=LAPTOP-R7CIKDER\ARIFACER;Initial Catalog=Mini_Project;User ID=sa;Password=123456; Integrated Security=True;"
+        Dim connectionString As String = "Data Source=DESKTOP-NDRD6D4;Initial Catalog=Mini_Project;User ID=sa;Password=123456; Integrated Security=True;"
         Dim connection As New SqlConnection(connectionString)
 
         Try
@@ -35,16 +35,16 @@ Public Class Form_Transaksi_Gaji
             DataGridView1.DataSource = dataSet.Tables(0)
 
             ' Set lebar kolom nama
-            DataGridView1.Columns("nama").Width = 150
+            DataGridView1.Columns("nama").Width = 200
 
             ' Set lebar kolom email
-            DataGridView1.Columns("email").Width = 150
+            DataGridView1.Columns("email").Width = 200
 
             ' Set lebar kolom role
-            DataGridView1.Columns("role").Width = 150
+            DataGridView1.Columns("role").Width = 200
 
             ' Set lebar kolom gaji
-            DataGridView1.Columns("gaji").Width = 150
+            DataGridView1.Columns("gaji").Width = 200
 
 
         Catch ex As Exception
@@ -53,6 +53,11 @@ Public Class Form_Transaksi_Gaji
             ' Tutup koneksi
             connection.Close()
         End Try
+    End Sub
+
+    Private Sub DataGridView1_CellFormatting(sender As Object, e As DataGridViewCellFormattingEventArgs) Handles DataGridView1.CellFormatting
+        ' Ubah warna teks menjadi hitam
+        e.CellStyle.ForeColor = Color.Black
     End Sub
 
     Private Sub btnTambah_Click(sender As Object, e As EventArgs) Handles btnTambah.Click

@@ -5,7 +5,7 @@ Imports System.Text.RegularExpressions
 Public Class Form_Login
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Text_Password.UseSystemPasswordChar = True
-        Btn_Hide.Text = "Show"
+        Btn_Hide_Regis.Text = "Show"
     End Sub
 
     Private Sub Link_Register_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles Link_Register.LinkClicked
@@ -39,7 +39,7 @@ Public Class Form_Login
 
         ' Koneksi ke database (ganti connection string dengan yang sesuai)
 
-        Dim connectionString As String = "Data Source=LAPTOP-R7CIKDER\ARIFACER;Initial Catalog=Mini_Project;User ID=sa;Password=123456; Integrated Security=True;"
+        Dim connectionString As String = "Data Source=DESKTOP-NDRD6D4;Initial Catalog=Mini_Project;User ID=sa;Password=123456; Integrated Security=True;"
         Dim connection As New SqlConnection(connectionString)
 
         Try
@@ -88,7 +88,9 @@ Public Class Form_Login
         End Try
     End Sub
 
-    Private Sub Btn_Hide_Click(sender As Object, e As EventArgs) Handles Btn_Hide.Click
+
+
+    Private Sub Btn_Hide_Regis_Click(sender As Object, e As EventArgs) Handles Btn_Hide_Regis.Click
         If Text_Password.UseSystemPasswordChar Then
             Text_Password.UseSystemPasswordChar = False
             Btn_Hide.Text = "Hide"

@@ -4,7 +4,7 @@ Imports System.Data.SqlClient
 Public Class Form_Kelola_Wahana
     Private Sub Form_Kelola_Wahana_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         ' Koneksi ke database (ganti connection string dengan yang sesuai)
-        Dim connectionString As String = "Data Source=LAPTOP-R7CIKDER\ARIFACER;Initial Catalog=Mini_Project;User ID=sa;Password=123456; Integrated Security=True;"
+        Dim connectionString As String = "Data Source=DESKTOP-NDRD6D4;Initial Catalog=Mini_Project;User ID=sa;Password=123456; Integrated Security=True;"
         Dim connection As New SqlConnection(connectionString)
 
         Try

@@ -38,7 +38,7 @@ Partial Class Form_Wisatawan
         Btn_Tempat_Wisata.Name = "Btn_Tempat_Wisata"
         Btn_Tempat_Wisata.Size = New Size(170, 80)
         Btn_Tempat_Wisata.TabIndex = 2
-        Btn_Tempat_Wisata.Text = "Tempat Wisata"
+        Btn_Tempat_Wisata.Text = "Tiket"
         Btn_Tempat_Wisata.UseVisualStyleBackColor = False
         ' 
         ' Label1
